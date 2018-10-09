@@ -8,10 +8,10 @@ import pandas as pd # data processing, CSV file I/O (e.g. pd.read_csv)
 import folium
 
 #df_traffic = pd.read_csv('../input/ukTrafficAADF.csv')
-df_acc = pd.read_csv('/home/anirudhibmgcp2/dashapp/drivingBehaviour/data/accidents_2005_to_2007.csv', dtype=object)
+df_acc = pd.read_csv('/Users/anirudhmuhnot/Desktop/OneDrive - technonjr.org/github/paper/drivingBehaviour/data/Accidents0515_cleaned.csv', dtype=object)
 
 map_hooray = folium.Map(location=[51.5074, 0.1278],
-                    zoom_start = 13)
+                    zoom_start = 17)
 
 # Ensure you're handing it floats
 df_acc['Latitude'] = df_acc['Latitude'].astype(float)
